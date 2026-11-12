@@ -1,0 +1,24 @@
+Dec 14 20:02:01.586 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Dec 14 20:02:01.588 HYPERVISOR: Started on IP = localhost, TCP port = 57638.
+Dec 14 20:02:02.075 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 14 20:02:02.076 HYPERVISOR: exec_cmd: hypervisor working_dir C:\CbS2_Networking_basics_Part_2-1\src\Part1\project-files\dynamips 
+Dec 14 20:02:02.077 GENERAL: working_dir=C:\CbS2_Networking_basics_Part_2-1\src\Part1\project-files\dynamips
+Dec 14 20:02:02.077 HYPERVISOR: exec_cmd: hypervisor working_dir C:\CbS2_Networking_basics_Part_2-1\src\Part1\project-files\dynamips\8484f4cc-2445-4e84-a2d9-3a4c155c97fe 
+Dec 14 20:02:02.079 GENERAL: working_dir=C:\CbS2_Networking_basics_Part_2-1\src\Part1\project-files\dynamips\8484f4cc-2445-4e84-a2d9-3a4c155c97fe
+Dec 14 20:02:02.080 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Dec 14 20:02:02.081 VM: VM R3 created.
+Dec 14 20:02:02.082 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Dec 14 20:02:02.082 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Dec 14 20:02:02.083 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 14 20:02:02.083 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Dec 14 20:02:02.084 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 14 20:02:02.084 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x6026e7b8 
+Dec 14 20:02:02.085 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/playn/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 14 20:02:02.085 HYPERVISOR: exec_cmd: c3745 set_mac_addr R3 c403.1076.0000 
+Dec 14 20:02:02.086 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 14 20:02:02.086 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Dec 14 20:02:02.086 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 14 20:02:02.087 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-1T 
+Dec 14 20:02:02.750 HYPERVISOR: exec_cmd: nio create_udp udp-0b8e668f-8e64-40d4-a3b4-34a531b6e29e 10010 127.0.0.1 10011 
+Dec 14 20:02:03.056 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-0b8e668f-8e64-40d4-a3b4-34a531b6e29e 
+Dec 14 20:02:03.057 HYPERVISOR: exec_cmd: vm get_status R3 

@@ -1,0 +1,23 @@
+Dec 12 16:15:34.667 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 12 16:15:34.667 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41007.
+Dec 12 16:15:34.673 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 16:15:34.673 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips 
+Dec 12 16:15:34.673 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips
+Dec 12 16:15:34.674 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/955738bf-b098-4a68-9315-b3bdbf7119cb 
+Dec 12 16:15:34.674 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/955738bf-b098-4a68-9315-b3bdbf7119cb
+Dec 12 16:15:34.674 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Dec 12 16:15:34.674 VM: VM R1 created.
+Dec 12 16:15:34.674 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Dec 12 16:15:34.674 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Dec 12 16:15:34.674 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 12 16:15:34.675 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 12 16:15:34.675 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6026e7b8 
+Dec 12 16:15:34.675 HYPERVISOR: exec_cmd: vm set_ios R1 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 16:15:34.675 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c401.108f.0000 
+Dec 12 16:15:34.676 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 12 16:15:34.676 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Dec 12 16:15:34.676 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 12 16:15:34.676 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Dec 12 16:15:34.751 HYPERVISOR: exec_cmd: nio create_udp udp-38eb4b07-5937-411f-a245-b4c9c1c0a742 10002 127.0.0.1 10003 
+Dec 12 16:15:34.969 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-38eb4b07-5937-411f-a245-b4c9c1c0a742 
+Dec 12 16:15:34.971 HYPERVISOR: exec_cmd: vm get_status R1 

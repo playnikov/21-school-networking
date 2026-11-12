@@ -1,0 +1,37 @@
+Dec 12 14:28:59.118 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 12 14:28:59.118 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60179.
+Dec 12 14:28:59.128 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 14:28:59.129 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips 
+Dec 12 14:28:59.129 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips
+Dec 12 14:28:59.129 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/955738bf-b098-4a68-9315-b3bdbf7119cb 
+Dec 12 14:28:59.129 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/955738bf-b098-4a68-9315-b3bdbf7119cb
+Dec 12 14:28:59.129 HYPERVISOR: exec_cmd: vm create R1 1 c3745 
+Dec 12 14:28:59.129 VM: VM R1 created.
+Dec 12 14:28:59.129 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Dec 12 14:28:59.130 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Dec 12 14:28:59.130 HYPERVISOR: exec_cmd: vm set_ios R1 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 14:28:59.130 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 12 14:28:59.130 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x6026e7b8 
+Dec 12 14:28:59.130 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Dec 12 14:28:59.131 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Dec 12 14:28:59.131 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Dec 12 14:28:59.131 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 12 14:28:59.131 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 16 WIC-1T 
+Dec 12 14:28:59.187 HYPERVISOR: exec_cmd: vm set_ios R1 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 14:29:10.008 HYPERVISOR: exec_cmd: nio create_udp udp-f4f4ca2c-b0a0-4d3f-be27-1cfb8f62aefb 10002 127.0.0.1 10003 
+Dec 12 14:29:10.224 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-f4f4ca2c-b0a0-4d3f-be27-1cfb8f62aefb 
+Dec 12 14:29:10.226 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 12 14:31:29.642 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Dec 12 14:31:29.644 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 12 14:31:29.645 HYPERVISOR: exec_cmd: vm get_status R1 
+Dec 12 14:31:29.646 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+Dec 12 14:31:29.646 HYPERVISOR: exec_cmd: vm start R1 
+Dec 12 14:33:31.730 HYPERVISOR: exec_cmd: vm extract_config R1 
+Dec 12 14:33:31.778 HYPERVISOR: exec_cmd: vm extract_config R1 
+Dec 12 14:39:30.748 HYPERVISOR: exec_cmd: nio bind_filter udp-f4f4ca2c-b0a0-4d3f-be27-1cfb8f62aefb 2 capture 
+Dec 12 14:39:30.748 HYPERVISOR: exec_cmd: nio setup_filter udp-f4f4ca2c-b0a0-4d3f-be27-1cfb8f62aefb 2 en10mb /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/captures/R1_FastEthernet00_to_R2_FastEthernet00.pcap 
+Dec 12 14:40:47.861 HYPERVISOR: exec_cmd: nio unbind_filter udp-f4f4ca2c-b0a0-4d3f-be27-1cfb8f62aefb 2 
+Dec 12 14:41:51.000 HYPERVISOR: exec_cmd: nio bind_filter udp-f4f4ca2c-b0a0-4d3f-be27-1cfb8f62aefb 2 capture 
+Dec 12 14:41:51.000 HYPERVISOR: exec_cmd: nio setup_filter udp-f4f4ca2c-b0a0-4d3f-be27-1cfb8f62aefb 2 en10mb /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/captures/R1_FastEthernet00_to_R2_FastEthernet00.pcap 
+Dec 12 14:42:08.917 HYPERVISOR: exec_cmd: vm extract_config R1 
+Dec 12 14:42:08.926 HYPERVISOR: exec_cmd: vm extract_config R1 

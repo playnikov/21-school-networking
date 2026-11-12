@@ -1,0 +1,11 @@
+С какого IP адреса инициировался reverse shell?
+192.168.1.101
+
+На какой IP адрес был проброшен reverse shell?
+192.168.1.100
+
+С помощью какого протокола был осуществлен reverse shell?
+TCP
+
+Какие команды были переданы?
+id, uname -a, whoami, ls -la /etc, cat /etc/passwd

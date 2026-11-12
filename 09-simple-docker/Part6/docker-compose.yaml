@@ -1,0 +1,12 @@
+services:
+  part5:
+    build: ../Part5/
+    container_name: part5
+  proxy-nginx:
+    image: nginx
+    container_name: proxy
+    ports:
+      - 80:8080
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./logs:/var/log/nginx

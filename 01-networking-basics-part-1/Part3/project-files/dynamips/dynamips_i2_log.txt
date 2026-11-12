@@ -1,0 +1,23 @@
+Dec 12 16:15:34.697 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 12 16:15:34.697 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56975.
+Dec 12 16:15:34.707 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 16:15:34.707 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips 
+Dec 12 16:15:34.707 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips
+Dec 12 16:15:34.707 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/0df646ce-29b5-4af5-8682-9ac999b27a63 
+Dec 12 16:15:34.707 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/0df646ce-29b5-4af5-8682-9ac999b27a63
+Dec 12 16:15:34.707 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Dec 12 16:15:34.707 VM: VM R2 created.
+Dec 12 16:15:34.708 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Dec 12 16:15:34.708 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Dec 12 16:15:34.708 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 12 16:15:34.708 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 16:15:34.709 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6026e7b8 
+Dec 12 16:15:34.709 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 16:15:34.709 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.10ab.0000 
+Dec 12 16:15:34.710 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Dec 12 16:15:34.710 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Dec 12 16:15:34.710 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 16:15:34.712 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Dec 12 16:15:35.002 HYPERVISOR: exec_cmd: nio create_udp udp-10cf6d45-39ee-4bd4-9d47-065885757c3d 10004 127.0.0.1 10005 
+Dec 12 16:15:35.218 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-10cf6d45-39ee-4bd4-9d47-065885757c3d 
+Dec 12 16:15:35.220 HYPERVISOR: exec_cmd: vm get_status R2 

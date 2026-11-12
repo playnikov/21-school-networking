@@ -1,0 +1,5 @@
+Для взаимодействие между ntp-клиентом и ntp-сервером используется UDP(User Datagram Protocol)
+
+source и destination порты: 123
+
+Transmit Timestamp: Dec 10, 2010 10:00:40.512023035 UTC

@@ -1,0 +1,48 @@
+Dec 12 14:29:00.902 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 12 14:29:00.902 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60411.
+Dec 12 14:29:00.910 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 12 14:29:00.910 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips 
+Dec 12 14:29:00.911 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips
+Dec 12 14:29:00.911 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/0df646ce-29b5-4af5-8682-9ac999b27a63 
+Dec 12 14:29:00.911 GENERAL: working_dir=/home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/0df646ce-29b5-4af5-8682-9ac999b27a63
+Dec 12 14:29:00.911 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Dec 12 14:29:00.911 VM: VM R2 created.
+Dec 12 14:29:00.911 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Dec 12 14:29:00.911 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Dec 12 14:29:00.912 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 14:29:00.912 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 14:29:00.912 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6026e7b8 
+Dec 12 14:29:00.912 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Dec 12 14:29:00.913 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Dec 12 14:29:00.913 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 12 14:29:00.913 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 14:29:00.914 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Dec 12 14:29:00.972 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 14:29:03.669 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 14:29:10.255 HYPERVISOR: exec_cmd: nio create_udp udp-12463433-cfa5-45be-bd9a-2927dc9ef70d 10004 127.0.0.1 10005 
+Dec 12 14:29:10.471 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-12463433-cfa5-45be-bd9a-2927dc9ef70d 
+Dec 12 14:29:10.473 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 14:31:29.163 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Dec 12 14:31:29.164 VM: VM Ghost created.
+Dec 12 14:31:29.165 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 12 14:31:29.167 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 12 14:31:29.169 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 12 14:31:29.169 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Dec 12 14:31:29.170 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 12 14:31:29.170 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Dec 12 14:31:29.170 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 12 14:31:29.466 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 12 14:31:29.467 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 12 14:31:29.631 VM: VM Ghost shutdown.
+Dec 12 14:31:29.633 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Dec 12 14:31:29.635 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 12 14:31:29.635 VM: VM Ghost destroyed.
+Dec 12 14:31:29.639 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 12 14:31:29.640 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/nataliam/CbS1_Networking_basics_Part_1-1/src/Part3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 12 14:31:29.642 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 12 14:31:29.643 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Dec 12 14:31:29.644 HYPERVISOR: exec_cmd: vm start R2 
+Dec 12 14:35:03.133 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 12 14:35:03.141 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 12 14:39:06.138 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 12 14:39:06.143 HYPERVISOR: exec_cmd: vm extract_config R2 

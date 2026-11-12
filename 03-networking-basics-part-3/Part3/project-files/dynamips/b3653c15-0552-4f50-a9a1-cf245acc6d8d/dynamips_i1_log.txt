@@ -1,0 +1,57 @@
+Dec 17 12:48:41.592 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 17 12:48:41.592 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38329.
+Dec 17 12:48:41.599 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 17 12:48:41.599 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS3_Networking_basics_Part_3-1/src/Part3/project-files/dynamips 
+Dec 17 12:48:41.599 GENERAL: working_dir=/home/nataliam/CbS3_Networking_basics_Part_3-1/src/Part3/project-files/dynamips
+Dec 17 12:48:41.600 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nataliam/CbS3_Networking_basics_Part_3-1/src/Part3/project-files/dynamips/9542e5b9-4b8f-44c6-a2ae-bfac9e9f4816 
+Dec 17 12:48:41.600 GENERAL: working_dir=/home/nataliam/CbS3_Networking_basics_Part_3-1/src/Part3/project-files/dynamips/9542e5b9-4b8f-44c6-a2ae-bfac9e9f4816
+Dec 17 12:48:41.600 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Dec 17 12:48:41.600 VM: VM R2 created.
+Dec 17 12:48:41.600 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Dec 17 12:48:41.600 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Dec 17 12:48:41.601 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Dec 17 12:48:41.601 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 12:48:41.601 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x6026e7b8 
+Dec 17 12:48:41.601 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 17 12:48:41.602 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.160b.0000 
+Dec 17 12:48:41.602 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Dec 17 12:48:41.602 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Dec 17 12:48:41.722 HYPERVISOR: exec_cmd: nio create_udp udp-311ca45f-d1f1-4c2e-b08b-55f45515d51a 10002 127.0.0.1 10003 
+Dec 17 12:48:41.934 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-311ca45f-d1f1-4c2e-b08b-55f45515d51a 
+Dec 17 12:48:41.935 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 12:48:42.461 HYPERVISOR: exec_cmd: nio create_udp udp-9a495561-b557-4d72-9c43-c1ccefd23fbe 10010 127.0.0.1 10011 
+Dec 17 12:48:42.463 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-9a495561-b557-4d72-9c43-c1ccefd23fbe 
+Dec 17 12:48:42.464 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 12:48:44.250 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Dec 17 12:48:44.251 VM: VM Ghost created.
+Dec 17 12:48:44.256 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/nataliam/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25.image 
+Dec 17 12:48:44.260 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 17 12:48:44.267 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/nataliam/CbS3_Networking_basics_Part_3-1/src/Part3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 17 12:48:44.271 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Dec 17 12:48:44.278 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 17 12:48:44.280 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Dec 17 12:48:44.280 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 17 12:48:44.601 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 17 12:48:44.602 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 17 12:48:44.710 VM: VM Ghost shutdown.
+Dec 17 12:48:44.711 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Dec 17 12:48:44.711 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 17 12:48:44.711 VM: VM Ghost destroyed.
+Dec 17 12:48:44.712 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 17 12:48:44.713 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/nataliam/CbS3_Networking_basics_Part_3-1/src/Part3/project-files/dynamips/c3745-adventerprisek9-mz.124-25.image-256.ghost 
+Dec 17 12:48:44.713 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 12:48:44.713 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Dec 17 12:48:44.714 HYPERVISOR: exec_cmd: vm start R2 
+Dec 17 12:51:34.305 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 12:51:34.306 HYPERVISOR: exec_cmd: vm stop R2 
+Dec 17 12:51:34.445 VM: VM R2 shutdown.
+Dec 17 12:51:34.459 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 17 12:52:36.260 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 12:52:36.262 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 17 12:52:36.317 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 12:52:36.318 HYPERVISOR: exec_cmd: vm extract_config R2 
+Dec 17 12:52:36.319 HYPERVISOR: exec_cmd: vm delete R2 
+Dec 17 12:52:36.319 VM: VM R2 destroyed.
+Dec 17 12:52:36.319 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 17 12:52:36.596 HYPERVISOR: Stopped.
+Dec 17 12:52:36.596 GENERAL: reset done.
